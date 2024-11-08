@@ -1,0 +1,18 @@
+settings:
+  # The amount of time in seconds that the player is in combat for
+  CombatTime: 10
+
+  # If true, the player will be killed when they log out if they are in combat
+  KillOnLogout: true
+
+  # If true, players in combat will not be able to execute any commands
+  BanAllCommands: false
+
+  # The commands banned for players in combat (Not important if "BanAllCommands" = true)
+  BannedCommands:
+    - spawn
+    - home
+    - tpa
+    - tp
+    - warp
+    - wild

@@ -1,0 +1,129 @@
+# This file contains all the messages used in this plugin
+
+# Combat Logger
+combat-logger:
+  enter-combat: "&cYou are now in combat, do not log out or you will be killed."
+  exit-combat: "&cYou are no longer in combat."
+  banned-command: "&cYou can not execute this command while in combat"
+
+# Economy 
+economy:
+  max-money: "&r&cYou have reached the maximum amount of money!"
+  add-balance: "&r&a{currency_symbol}{amount} has been added to your account."
+
+# Relics
+relics:
+  obtained: "&a&l(!)&r&f You have uncovered a {color}{rarity}&r&f relic!"
+  no-rewards: "&c&l(!)&r&f Error: No rewards defined for {rarity} rarity!"
+  rewarded: "&b&l(!)&r&f You received &e{amount}x {item}&f from the relic!"
+  unknown: "&r&l&c(!) &r&fUnknown or unavailable rarity: {rarity}"
+
+# CoinFlip
+coinflip:
+  prefix: "&r&l&6Coin&3Flip&r"
+  cannot-flip-yourself: "{prefix} &7You can't CoinFlip yourself!"
+  not-enough-money: "{prefix} &7You don't have enough money to do this CoinFlip!"
+  end:
+    winner: "{prefix} &7You have won the CoinFlip against {loser} and got ${money}"
+    loser: "{prefix} &7You have lost the CoinFlip against {winner} and lost ${money}"
+  opening: "{prefix} &7Opening the CoinFlip menu..."
+  already-submitted: "{prefix} &7You can't submit more than 1 CoinFlip at once"
+  not-enough-money: "{prefix} &7You can't CoinFlip more money than you have!"
+  submitted: "{prefix} &7Sucessfully submitted your CoinFlip!"
+  removed: "{prefix} &7Sucessfully removed your CoinFlip!"
+  not-submitted: "{prefix} &7You don't have a Counter Flip submitted"
+  item:
+    name: "&r&f&l{player}"
+    lore: 
+      - " "
+      - "&r&3&lWager"
+      - "&r&f{wager}"
+      - " "
+      - "&r&3&bSide Chosen"
+      - "&r&f{side}"
+      - " "
+      - "&r&7Click here to &l&aENTER&r&7 the best!"
+
+# Warps
+warps:
+  prefix: "&r&l&b( &fWARP &b)&r&7 "
+  commands:
+    warpmanager:
+      name: "warpmanager"
+      description: "manage warp"
+    warp:
+      name: "warp"
+      description: "use warp"
+    short-warp-description: "teleport to {warp}"
+  form:
+    title: "&r&l&b( &fWARP &b)"
+    create: "&r&l&0Create Warp\n&r&8click to create warp"
+    remove: "&r&l&0Remove Warp\n&r&8click to remove warp"
+    edit: "&r&l&0Edit Warp\n&r&8click to edit warp"
+  create-form:
+    title: "&r&l&b( &fWARP &b)"
+    input: "name"
+    title-toggle: "send title"
+    particle-toggle: "add particle"
+    sound-toggle: "add sound"
+    permit-toggle: "user can use"
+    command-register-toggle: "can use command to warp"
+  create: 
+    success: "{prefix}&fSuccess to create {warp} warp!"
+    input-name: "Input warp name."
+    already-exist: "This warp already exists."
+  remove-form:
+    title: "&r&l&b( &fWARP &b)"
+    button: "&r&l&0{warp}\n&r&8click to remove warp"
+  remove:
+    success: "{prefix}&fSuccess to remove {warp} warp!"
+  error: "Error: Could not find warp."  
+  edit-form:
+    list: # The menu where you pick what warp to edit
+      title: "&r&l&b( &fWARP &b)" 
+      button: "&r&l&0{warp}\n&r&8click to edit"
+    edit: # The actual editing form
+      title: "&r&l&b( &fWARP &b)"
+      success: "Success to edit {warp} warp"
+  teleport:
+    title: "&r&f&lWARP!"
+    subtitle: "&r&bteleported to {warp}"
+  menu-form:
+    title: "&r&l&b( &fWARP &b)"
+    button: "&r&l&0{warp}\n&r&8click to warp"
+    manage: "&r&l&0Warp Manager\n&r&8click to manage warps"
+  no-permission: "You don't have permission to teleport"
+
+# AreaGuard
+areaguard:
+  title: "AreaGuard recode by &4Mr. &bMartian"
+  ui:
+    manage-areas: "Manage areas"
+    new-area: "Add a new area"
+    redefine-area: "Redfine area point"
+    delete-area: "&r&cDelete area"
+    set-area-name: "Set area name"
+    expand-vertically: "Expand vertically"
+    return-button: "Return"
+    quit-button: "Quit"
+  messages:
+    delete-area: "&r&aYou have successfully deleted {area} area"
+    modify-setting: "&r&aYou have successfully modified {area} area setting(s){line}{setting}"
+    invalid-area-name: "&r&cArea name is invalid"
+    select-two: "&r&aYou must select 2 points for area {area}"
+    set-first-pos: "&r&aYou have successfully set the first position to {x} | {y} | {z} | {world}"
+    set-second-pos: "&r&aYou have successfully set the second position to {x} | {y} | {z} | {world}"
+    same-world: "&r&cYou must select two points with the same world"
+    created-area: "&r&aYou have successfully created a new area {area} in world {world}"
+    redfined-area: "&r&aYou have successfully redfined area {area}"
+  settings:
+    priority: "Priority"
+    place: "Place block"
+    break: "Break block"
+    use: "Use"
+    pvp: "Pvp"
+    damage: "Damage"
+    drop: "Drop"
+    explosion: "Explosion"
+    fly: "Fly"
+    hunger: "Hunger"

@@ -1,0 +1,110 @@
+# How to add items to the reward list:
+# All rewards MUST follow the layout shown below!
+
+# How to add an item without a custom name.
+# - item: "diamond"
+#   amount: 32
+
+# How to add an item with a custom name.
+# - item: "apple"
+#   amount: 1
+#   name: "Yummy apple!"
+
+# How to add an item with enchantments and custom name.
+# - item: "wooden_sword"
+#     enchantments:
+#        - enchant: "sharpness"
+#          level: 2
+#        - enchant: "autorepair"
+#          level: 1
+#     name: "cool sword"
+#     amount: 1
+
+# How to add an item with enchantments but without custom name.
+# - item: "wooden_sword"
+#     enchantments:
+#        - enchant: "sharpness"
+#          level: 2
+#        - enchant: "autorepair"
+#          level: 1
+#       amount: 1
+
+# This has been modified a bit, You are now able to create more relics
+# meaning now youre no longer stuck with the default 6, and you can change the color
+# of the relic, and the name of the relic.
+relic-item:
+  item: "prismarine_shard"
+  name: "&r{color}{rarity}&r &frelic"
+  lore:
+    - "&r&e&l(!)&r&f Right/Left click to claim!"
+
+rewards:
+  Common:
+    color: "&e" # The color of the relic
+    rarity: 70  # The chance to obtain the relic
+    items:
+      - item: "diamond_sword"
+        enchantments:
+          - enchant: "sharpness"
+            level: 2
+          - enchant: "autorepair"
+            level: 1
+        name: "&r&l&reDaily Sword"
+        amount: 1
+      - item: "golden_apple"
+        amount: 5
+      - item: "steak"
+        amount: 32
+
+  Uncommon:
+    color: "&a"
+    rarity: 20
+    items:
+      - item: "iron_chestplate"
+        enchantments:
+          - enchant: "protection"
+            level: 2
+        amount: 1
+      - item: "golden_apple"
+        amount: 5
+      - item: "steak"
+        amount: 32
+
+  Rare:
+    color: "&b"
+    rarity: 7
+    items:
+      - item: "golden_apple"
+        amount: 1
+      - item: "steak"
+        amount: 32
+
+  Epic:
+    color: "&d"
+    rarity: 2
+    items:
+      - item: "steak"
+        amount: 32
+
+  Legendary:
+    color: "&1"
+    rarity: 1
+    items:
+      - item: "diamond_block"
+        amount: 1
+      - item: "steak"
+        amount: 32
+
+  Mythical:
+    color: "&5"
+    rarity: 1
+    items:
+      - item: "nether_star"
+        enchantments:
+          - enchant: "efficiency"
+            level: 5
+          - enchant: "fortune"
+            level: 3
+        amount: 1
+      - item: "steak"
+        amount: 32

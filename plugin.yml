@@ -1,0 +1,27 @@
+name: RnaptCore
+main: ecstsy\rnaptCore\Loader
+api: 5.0.0
+version: 1.0.0
+
+permissions:
+  core.default:
+    default: true
+    description: "Default permission for Core"
+  core.relics:
+    default: op
+    description: "Gives access to Relics commands"
+  core.warpmanager:
+    default: op
+    description: "Gives access to WarpManager commands"
+  core.warp:
+    default: true
+    description: "Gives access to Warp commands"
+  core.shortwarp:
+    default: true
+    description: "Gives access to ShortWarp commands"
+  core.warp.admin:
+    default: op
+    description: "Gives extra options for Warp command(s)"
+  core.areaguard.use:
+    default: op
+    description: "Gives access to AreaGuard command"

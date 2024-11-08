@@ -1,0 +1,21 @@
+# Economy Configuration 
+
+# Economy Settings
+settings:
+  # Defines the balance with which new players begin. Defaults to 0.
+  starting-balance: 0
+
+  # Set this to a currency symbol you want to use.
+  currency-symbol: '$'
+
+  # Set the maximum amount of money a player can have.
+  # The amount is always limited to 10 trillion because of the limitations of a java double.
+  max-money: 10000000000000
+
+  # Minimum acceptable amount to be used in /pay.
+  minimum-pay-amount: 1
+
+  # Whether or not users with a balance less than or equal to $0 should be shown in balance-top.
+  # Setting to false will not show people with balances <= 0 in balance-top.
+  # NOTE: After reloading the config, you must also restart for it to appear
+  show-zero-baltop: true
